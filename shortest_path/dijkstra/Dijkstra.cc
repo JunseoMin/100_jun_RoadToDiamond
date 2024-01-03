@@ -1,29 +1,30 @@
 #include <iostream>
 #include <vector>
 
+#define INF
+
 using namespace std;
 
-namespace Dijkstra
+class Dijkstra
 {
-    class Dijkstra
-    {
-    private:
-        /* data */
-    public:
-        Dijkstra(/* args */);
-        ~Dijkstra();
-    };
+private:
+    /* data */
+    vector<double> input_data;
     
-    Dijkstra::Dijkstra(/* args */)
-    {
-
-    }
-    
-    Dijkstra::~Dijkstra()
-    {
-
-    }
+    /* private methods */
     
 
+
+public:
+    Dijkstra(const vector<double> &input);
+    ~Dijkstra();
+};
     
-} // namespace dijkstra
+Dijkstra::Dijkstra(const vector<double> &input)
+{
+    Dijkstra::input_data = input;
+}
+
+Dijkstra::~Dijkstra()
+{
+}
